@@ -881,6 +881,13 @@ static void __exit cpufreq_gov_dbs_exit(void)
 }
 
 
+MODULE_AUTHOR("Sultan Qasim Khan <sultanqasim@gmail.com>");
+MODULE_DESCRIPTION("'cpufreq_lionfish' - A dynamic cpufreq governor for mobile "
+		"devices designed to keep CPU frequencies to a minimum while "
+		"still briefly boosting frequencies as required to avoid lag."
+);
+MODULE_LICENSE("GPL");
+
 #ifdef CONFIG_CPU_FREQ_DEFAULT_GOV_LIONFISH
 fs_initcall(cpufreq_gov_dbs_init);
 #else
